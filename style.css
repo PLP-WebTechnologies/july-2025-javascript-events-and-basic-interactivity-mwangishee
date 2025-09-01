@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  transition: background 0.3s, color 0.3s;
+  background: white;   /* default light mode */
+  color: black;
+}
+
+body.dark {
+  background: #222;   /* dark mode background */
+  color: white;       /* text turns white */
+}
+
+/* General button styles */
+button {
+  margin: 8px 5px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #4CAF50; /* green default */
+  color: white;
+  transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+/* Hover effect (desktop) */
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+/* Click effect */
+button:active {
+  background-color: #3e8e41;  /* darker green when pressed */
+  transform: scale(0.95);     /* button shrinks slightly */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3) inset; /* pressed look */
+}
+
+/* Responsive: full width buttons on mobile */
+@media (max-width: 600px) {
+  button {
+    width: 100%;
+    margin: 10px 0;
+    font-size: 1.1rem;
+    padding: 14px;
+  }
+}
